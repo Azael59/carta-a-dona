@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta con Descarga de PDF</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo de la página */
+    body {
+      font-family: 'Roboto Slab', serif;
+      background-color: #FF0000; /* Fondo rojo */
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white; /* Letras blancas */
+    }
+
+    /* Contenedor de la carta */
+    .carta {
+      background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      width: 60%;
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .titulo {
+      font-family: 'Sacramento', cursive;
+      font-size: 4em;
+      margin-bottom: 20px;
+      color: white;
+      z-index: 2;
+    }
+
+    .contenido {
+      font-size: 2em;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      z-index: 2;
+    }
+
+    /* Estilo del enlace de descarga */
+    .descarga {
+      text-decoration: none;
+      color: #FF4081;
+      font-size: 1.5em;
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #FF4081;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      z-index: 2;
+    }
+
+    .descarga:hover {
+      background-color: #FF4081;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <div class="titulo">Señooorita Donaaaa,</div>
+    <div class="contenido">
+      <p>Te quiero mucho.</p>
+      <p>Feliz 14 de febrero.</p>
+    </div>
+    
+    <!-- Enlace para descargar el PDF -->
+    <a href="para ti.pdf" download="para_ti.pdf" class="descarga">Descargar Carta en PDF</a>
+  </div>
+
+</body>
+</html>
